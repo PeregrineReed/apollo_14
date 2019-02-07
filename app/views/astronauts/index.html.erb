@@ -1,0 +1,15 @@
+<h1>Apollo 14</h1>
+
+<% @astro.each do |astro| %>
+  <div id=<%= "astro-#{astro.id}" %>>
+    <%= astro.name %>
+    Age: <%= astro.age %>
+    <%= astro.job %>
+    Total Time in Space: <%= astro.total_space %>
+  </div>
+<% end %>
+<p>Average Age: <%= @avg_age %></p>
+
+<% @missions.each do |mission| %>
+  <%= mission %>
+<% end %>
